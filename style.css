@@ -4,8 +4,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
+h2.titulo{
+    color:white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #8ceafd;
+}
 body{
     background-color: black;
     height: 100vh;
@@ -65,7 +75,7 @@ header nav ul li{
     transition: .2s;
 }
 
-.btn-contato button:hover{
+button:hover{
     box-shadow: 0px 0px 8px #8ceafd;
     transform: scale(1.05);
 }
@@ -93,6 +103,7 @@ section.topo-do-site .flex{
     color:#8ceafd;
     font-size: 80px;
    letter-spacing: 10px;
+   animation: blink 2s infinite alternate;
 }
 
 .topo-do-site .txt-topo-site p{
@@ -103,7 +114,7 @@ section.topo-do-site .flex{
 
 .topo-do-site .img-topo-site img{
     position: relative;
-    animation: ;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar{
@@ -114,4 +125,164 @@ section.topo-do-site .flex{
     100%{
         top:30px;
     }
+}
+
+@keyframes blink {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: 100%;
+  }
+}
+
+/* ESTILO DAS HARD SKILLS */
+
+section.skills{
+    padding: 40px 4%;
+}
+
+section.skills .flex{
+    gap: 60px
+}
+.skills .skills-box{
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+    transition: 1s;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.726);
+}
+
+.skills .skills-box i{
+    font-size: 65px;
+}
+
+.skills .skills-box h3{
+    font-size: 26px;
+    margin: 15px 0px;
+}
+
+/*  ESTILO SOBRE */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .img-selfie{
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.sobre .img-selfie:hover{
+    box-shadow: 0 0 8px #8ceafd;
+    transform: scale(1.05);
+}
+
+.sobre .txt-sobre h2{
+    font-size: 26px;
+    color: white;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre span{
+    color:#8ceafd;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    color:white;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8ceafd;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+/* ESTILO PORTIFOLIO */
+
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height:460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    position: relative;
+    border-radius: 40px;
+
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO RODAPÉ */
+
+footer{
+    padding: 80px 4%;
+     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+}
+
+footer .line-footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer p i{
+    color: #8ceafd;
+    font-size: 22px;
+    background-color: #ffffff00;
+}
+
+footer .line-footer p a{
+    color: white;
 }
