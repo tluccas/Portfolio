@@ -167,6 +167,68 @@ section.skills .flex{
     margin: 15px 0px;
 }
 
+.skills .skills-box .txt-animado h3{
+    font-size: 26px;
+    margin: 15px 0px;
+}
+
+.skills .skills-box .txt-animado span{
+    position:relative;
+   
+}
+
+.txt-animado span::before{
+    content: "";
+    color: #8ceafd;
+    animation: palavras 20s infinite;
+}
+
+.txt-animado span::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #8ceafd;
+    right: 20px;
+    animation: cursor 0.8s infinite, typing 20s steps(15) infinite ;
+    right: -5px;
+    width: calc(100% + 12px);
+    background-color: black;
+    
+}
+
+@keyframes palavras {
+    0%, 20%{
+        content: "Java";
+    }
+    21%, 40%{
+        content: "Python";
+    }
+    41%, 60%{
+        content: "HTML";
+    }
+    61%, 80%{
+        content: "CSS";
+    }
+    81%, 100%{
+        content: "SQL";
+    }
+}
+
+@keyframes typing{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    } 
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 12px);
+    }
+}
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #000000;
+    }
+
+}
+
 /*  ESTILO SOBRE */
 
 section.sobre{
