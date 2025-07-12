@@ -279,14 +279,14 @@ section.sobre .flex{
     transition: .2s;
 }
 
-/* ESTILO PORTIFOLIO */
+/* ESTILO PORTFOLIO */
 
-section.portifolio{
+section.portfolio{
     padding: 80px 4%;
     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
 }
 
-section.portifolio .flex{
+section.portfolio .flex{
     justify-content: space-around;
     margin-top: 60px;
 }
