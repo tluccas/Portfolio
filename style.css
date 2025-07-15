@@ -14,7 +14,7 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: #8ceafd;
+    color: #00b4d8;
 }
 body{
     background-color: black;
@@ -76,7 +76,7 @@ header nav ul li{
 }
 
 button:hover{
-    box-shadow: 0px 0px 8px #8ceafd;
+    box-shadow: 0px 0px 8px #00b4d8;
     transform: scale(1.05);
 }
 
@@ -100,7 +100,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site  h1 span{
-    color:#8ceafd;
+    color:#00b4d8;
     font-size: 80px;
    letter-spacing: 10px;
    animation: blink 2s infinite alternate;
@@ -179,7 +179,7 @@ section.skills .flex{
 
 .txt-animado span::before{
     content: "";
-    color: #8ceafd;
+    color: #00b4d8;
     animation: palavras 20s infinite;
 }
 
@@ -187,7 +187,7 @@ section.skills .flex{
     content:"";
     position: absolute;
     height: 100%;
-    border-left: 2px solid #8ceafd;
+    border-left: 2px solid #00b4d8;
     right: 20px;
     animation: cursor 0.8s infinite, typing 20s steps(15) infinite ;
     right: -5px;
@@ -245,7 +245,7 @@ section.sobre .flex{
 }
 
 .sobre .img-selfie:hover{
-    box-shadow: 0 0 8px #8ceafd;
+    box-shadow: 0 0 8px #00b4d8;
     transform: scale(1.05);
 }
 
@@ -257,7 +257,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre span{
-    color:#8ceafd;
+    color:#00b4d8;
     display: block;
 }
 
@@ -267,16 +267,23 @@ section.sobre .flex{
     text-align: justify;
 }
 
+.btn-social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 .btn-social button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
     border: none;
-    background-color: #8ceafd;
+    background-color: #00b4d8;
     font-size: 22px;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+    
 }
 
 /* ESTILO PORTFOLIO */
@@ -340,7 +347,7 @@ footer .line-footer .flex{
 }
 
 footer .line-footer p i{
-    color: #8ceafd;
+    color: #00b4d8;
     font-size: 22px;
     background-color: #ffffff00;
 }
