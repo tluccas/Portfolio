@@ -1,5 +1,5 @@
 /* ESTILO GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,145 +7,211 @@
     scroll-behavior: smooth;
 }
 
-h2.titulo{
-    color:white;
+h2.titulo {
+    color: white;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #00b4d8;
 }
-body{
+
+body {
     background-color: black;
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
+}
+
+/* BARRA LATERAL */
+
+.btn-barra-lateral i{
+    color: #00b4d8;
+    font-size: 40px;
+}
+
+.barra-lateral{
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    transition: .2s;
+}
+
+.barra-lateral.abrir-barra{
+    width: 70%;
+}
+
+.barra-lateral.abrir-barra ~ .overlay-barra{
+    display: block;
+}
+
+
+.barra-lateral .btn-fechar{
+    color: #eff1f1ad;
+    font-size: 40px;
+    padding: 20px 8%;
+}
+
+.barra-lateral nav ul{
+    text-align: right;
+}
+
+.barra-lateral nav ul li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 20px 4%;
+    display: block;
+
+}
+
+.barra-lateral nav ul li a:hover{
+    background-color: #00b4d8;
+    color: #000000;
+}
+
+.overlay-barra{
+    background-color: #000000c2;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
 }
 
 /* ESTILO CABEÇÁRIO */
 
-header{
+header {
     padding: 40px 4%;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
-    color:rgb(148, 148, 148);
+header a {
+    color: rgb(148, 148, 148);
     text-decoration: none;
     display: inline-block;
 }
 
-header a:hover{
+header a:hover {
     color: #ffff;
     transform: scale(1.05);
     transition: .2s;
 }
 
-header nav ul{
+header nav.menu-desktop ul {
     list-style-type: none;
 }
 
-header nav ul li{
-    display: inline-block; /* alinha as li */
+header nav.menu-desktop ul li {
+    display: inline-block;
+    /* alinha as li */
     padding: 0 40px;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 700;
     color: rgb(0, 0, 0);
-    background-color:#00b4d8;
+    background-color: #00b4d8;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
-button:hover{
+button:hover {
     box-shadow: 0px 0px 8px #00b4d8;
     transform: scale(1.05);
 }
 
 /* ESTILO TOPO DO SITE */
 
-section.topo-do-site{
+section.topo-do-site {
     padding: 40px 4%;
 
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site .txt-topo-site h1{
+.topo-do-site .txt-topo-site h1 {
     color: white;
     font-size: 40px;
     line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site  h1 span{
-    color:#00b4d8;
+.topo-do-site .txt-topo-site h1 span {
+    color: #00b4d8;
     font-size: 80px;
-   letter-spacing: 10px;
-   animation: blink 2s infinite alternate;
+    letter-spacing: 10px;
+    animation: blink 2s infinite alternate;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: white;
     font-size: 18px;
     margin: 40px 0px;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
 
-    100%{
-        top:30px;
+    100% {
+        top: 30px;
     }
 }
 
 @keyframes blink {
-  0% {
-    color: transparent;
-  }
-  100% {
-    color: 100%;
-  }
+    0% {
+        color: transparent;
+    }
+
+    100% {
+        color: 100%;
+    }
 }
 
 /* ESTILO DAS HARD SKILLS */
 
-section.skills{
+section.skills {
     padding: 40px 4%;
 }
 
-section.skills .flex{
+section.skills .flex {
     gap: 60px
 }
-.skills .skills-box{
+
+.skills .skills-box {
     color: white;
     padding: 40px;
     border-radius: 25px;
@@ -153,77 +219,107 @@ section.skills .flex{
     transition: 1s;
 }
 
-.skills .skills-box:hover{
+.skills .skills-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.726);
 }
 
-.skills .skills-box i{
+.skills .skills-box i {
     font-size: 65px;
 }
 
-.skills .skills-box h3{
+.skills .skills-box h3 {
     font-size: 26px;
     margin: 15px 0px;
 }
 
-.skills .skills-box .txt-animado h3{
+.skills .skills-box .txt-animado h3 {
     font-size: 26px;
     margin: 15px 0px;
 }
 
-.skills .skills-box .txt-animado span{
-    position:relative;
-   
+.skills .skills-box .txt-animado span {
+    position: relative;
+
 }
 
-.txt-animado span::before{
+.txt-animado span::before {
     content: "";
     color: #00b4d8;
     animation: palavras 20s infinite;
 }
 
-.txt-animado span::after{
-    content:"";
+.txt-animado span::after {
+    content: "";
     position: absolute;
     height: 100%;
     border-left: 2px solid #00b4d8;
     right: 20px;
-    animation: cursor 0.8s infinite, typing 20s steps(15) infinite ;
+    animation: cursor 0.8s infinite, typing 20s steps(15) infinite;
     right: -5px;
     width: calc(100% + 12px);
     background-color: black;
-    
+
 }
 
 @keyframes palavras {
-    0%, 20%{
+
+    0%,
+    20% {
         content: "Java";
     }
-    21%, 40%{
+
+    21%,
+    40% {
         content: "Python";
     }
-    41%, 60%{
+
+    41%,
+    60% {
         content: "HTML";
     }
-    61%, 80%{
+
+    61%,
+    80% {
         content: "CSS";
     }
-    81%, 100%{
+
+    81%,
+    100% {
         content: "SQL";
     }
 }
 
-@keyframes typing{
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
-    } 
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 12px);
     }
 }
+
 @keyframes cursor {
-    0%{
+    0% {
         border-left: 2px solid #000000;
     }
 
@@ -231,49 +327,50 @@ section.skills .flex{
 
 /*  ESTILO SOBRE */
 
-section.sobre{
+section.sobre {
     padding: 40px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
-.sobre .img-selfie{
+
+.sobre .img-selfie {
     border-radius: 40px;
     transition: .5s;
 }
 
-.sobre .img-selfie:hover{
+.sobre .img-selfie:hover {
     box-shadow: 0 0 8px #00b4d8;
     transform: scale(1.05);
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 26px;
     color: white;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre span{
-    color:#00b4d8;
+.sobre .txt-sobre span {
+    color: #00b4d8;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
-    color:white;
+    color: white;
     text-align: justify;
 }
 
-.btn-social{
+.btn-social {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.btn-social button{
+.btn-social button {
     width: 50px;
     height: 50px;
     border-radius: 30%;
@@ -283,24 +380,24 @@ section.sobre .flex{
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
-    
+
 }
 
 /* ESTILO PORTFOLIO */
 
-section.portfolio{
+section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
 }
 
-section.portfolio .flex{
+section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
 }
 
-.img-port{
-    width: 360px;
-    height:460px;
+.img-port {
+    width: 368px;
+    height: 460px;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -309,11 +406,11 @@ section.portfolio .flex{
 
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -331,27 +428,111 @@ section.portfolio .flex{
     transition: .5s;
 }
 
-.overlay:hover{
+.overlay:hover {
     opacity: 1;
 }
 
 /* ESTILO RODAPÉ */
 
-footer{
+footer {
     padding: 80px 4%;
-     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
 }
 
-footer .line-footer .flex{
+footer .line-footer .flex {
     justify-content: space-between;
 }
 
-footer .line-footer p i{
+footer .line-footer p i {
     color: #00b4d8;
     font-size: 22px;
     background-color: #ffffff00;
 }
 
-footer .line-footer p a{
+footer .line-footer p a {
     color: white;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1020px) {
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 37px;
+        line-height: 40px;
+
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+        
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* HARDSKILLS */
+
+    section.skills {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+
+    section.sobre{
+        padding: 40px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        text-align: center;
+    }
+
+    .sobre .img-selfie img{
+        width: 60%;
+    }
+    /* PORTFOLIO */
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    .portfolio .img-port{
+        max-width: 368px;
+    }
+
+    /* FOOTER */
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
 }
