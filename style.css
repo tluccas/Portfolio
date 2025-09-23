@@ -337,6 +337,7 @@ section.sobre .flex {
 }
 
 .sobre .img-selfie {
+    width: 350px;
     border-radius: 40px;
     transition: .5s;
 }
