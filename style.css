@@ -456,6 +456,19 @@ footer .line-footer p a {
 
 /* RESPONSIVIDADE */
 
+@media screen and (min-width: 1021px) {
+     .barra-lateral {
+        display: none !important;
+    }
+    .overlay-barra {
+        display: none !important;
+    }
+
+    .btn-barra-lateral{
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 1020px) {
 
     .flex {
