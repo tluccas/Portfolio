@@ -266,22 +266,22 @@ section.skills .flex {
 
     0%,
     20% {
-        content: "Java";
+        content: "Spring Boot";
     }
 
     21%,
     40% {
-        content: "Python";
+        content: "Node.js";
     }
 
     41%,
     60% {
-        content: "HTML";
+        content: "Java";
     }
 
     61%,
     80% {
-        content: "CSS";
+        content: "HTML/CSS";
     }
 
     81%,
