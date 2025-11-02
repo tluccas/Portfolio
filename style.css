@@ -397,8 +397,8 @@ section.portfolio .flex {
 }
 
 .img-port {
-    width: 368px;
-    height: 460px;
+    width: 276px;
+    height: 345px;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -422,7 +422,7 @@ section.portfolio .flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 600;
     color: white;
     opacity: 0;
