@@ -203,6 +203,44 @@ section.topo-do-site .flex {
 
 /* ESTILO DAS HARD SKILLS */
 
+.skills-carousel {
+    overflow: hidden;
+    display: flex;
+   
+}
+
+.skills-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+section.skills .skills-carousel .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 60px;
+    animation: slideSkills 18s linear infinite;
+    padding-right: 3em;
+    
+}
+
+@keyframes slideSkills {
+    from {
+        translate: -100%;
+    }
+
+    to {
+        translate: 0%;
+    }
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
 section.skills {
     padding: 40px 4%;
 }
@@ -356,7 +394,6 @@ section.sobre .flex {
 
 .sobre .txt-sobre span {
     color: #00b4d8;
-    display: block;
 }
 
 .sobre .txt-sobre p {
@@ -389,14 +426,33 @@ section.sobre .flex {
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+    
 }
 
-section.portfolio .flex {
-    justify-content: space-around;
+section.portfolio .carousel {
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+section.portfolio .carousel .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
+    gap: 60px;
+    animation: spin 24s linear infinite;
+    padding-right: 3em;
 }
 
+@keyframes spin{
+    from { translate: 0;}
+    to { translate: -100%;}
+}
 .img-port {
+    flex: 0 0 auto;
     width: 276px;
     height: 345px;
     background-size: cover;
@@ -515,6 +571,16 @@ footer .line-footer p a {
     section.skills {
         padding: 40px 8%;
     }
+      section.skills .skills-carousel .group {
+        gap: 30px;             
+        animation: slideSkills 25s linear infinite; 
+        padding-right: 6em; 
+
+    .skill-logo {
+        width: 35px;
+        height: 35px;
+    }
+}
 
     /* SOBRE */
 
