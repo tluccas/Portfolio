@@ -20,6 +20,7 @@ h2.titulo span {
 body {
     background-color: black;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .interface {
@@ -383,6 +384,16 @@ section.sobre .flex {
 .sobre .img-selfie:hover {
     box-shadow: 0 0 8px #00b4d8;
     transform: scale(1.05);
+}
+
+.sobre .txt-sobre {
+    opacity: 0;
+}
+
+.sobre .txt-sobre.animate{
+    animation: fadeInRight;
+    animation-duration: 2s;
+    opacity: 1;
 }
 
 .sobre .txt-sobre h2 {
