@@ -97,7 +97,10 @@ body {
 /* ESTILO CABEÇÁRIO */
 
 header {
-    padding: 40px 4%;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header>.interface {
@@ -126,6 +129,12 @@ header nav.menu-desktop ul li {
     display: inline-block;
     /* alinha as li */
     padding: 0 40px;
+}
+
+header .interface .logo img{
+    width: 90px;
+    height: auto;
+    padding-top: 12px;
 }
 
 .btn-contato button {
@@ -503,21 +512,38 @@ section.portfolio .carousel .group {
 /* ESTILO RODAPÉ */
 
 footer {
-    padding: 80px 4%;
+    padding: 100px 4%;
     box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+    text-align: center;
+    padding-top: 110px;
 }
 
-footer .line-footer .flex {
-    justify-content: space-between;
+footer .container{
+    font-size: 35px;
 }
 
-footer .line-footer p i {
-    color: #00b4d8;
-    font-size: 22px;
-    background-color: #ffffff00;
+footer .container i {
+    color: rgba(255, 255, 255, 0.514);
+    padding: 5px;
 }
 
-footer .line-footer p a {
+footer .container i.linkedin:hover{
+    color: rgb(78, 121, 185);
+}
+
+footer .container i:hover {
+    color: white;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+footer .container p {
+    color: rgba(255, 255, 255, 0.514);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+footer .container p a {
     color: white;
 }
 
@@ -622,7 +648,7 @@ footer .line-footer p a {
         flex-direction: column;
     }
 
-    footer .line-footer{
+    footer .container{
         text-align: center;
     }
 
