@@ -443,71 +443,148 @@ section.sobre .flex {
 
 /* ESTILO PORTFOLIO */
 
+
+/* ===== SECTION PORTFOLIO ===== */
+
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.192);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.192);
     
 }
 
-section.portfolio .carousel {
-    overflow: hidden;
-    display: flex;
+section.portfolio {
+    padding: 80px 4%;
 }
 
-.carousel::-webkit-scrollbar {
-    display: none;
-}
-section.portfolio .carousel .group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    gap: 60px;
-    animation: spin 24s linear infinite;
-    padding-right: 3em;
-}
-
-@keyframes spin{
-    from { translate: 0;}
-    to { translate: -100%;}
-}
-.img-port {
-    flex: 0 0 auto;
-    width: 276px;
-    height: 345px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    position: relative;
-    border-radius: 40px;
-
-}
-
-.img-port:hover {
-    background-position: 100% 100%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.432);
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
+.portfolio p.port-desc{
+    color: rgb(128, 128, 128);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 11px;
     opacity: 0;
-    transition: .5s;
+    transition: opacity 1s ease;
 }
 
-.overlay:hover {
+.portfolio p.port-desc a{
+    color: #00b4d898;
+    text-decoration: none;
+}
+
+.portfolio p.port-desc.animate{
     opacity: 1;
 }
+
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.portfolio-grid {
+    opacity: 0;
+}
+.portfolio-grid.animate{
+    animation: fadeInUp;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: .3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 0.75rem 0 0.25rem;
+    font-size: 1.2rem;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.card p {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: auto;
+    /* empurra os badges para o final do card */
+    padding-bottom: 12px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: .2s ease;
+}
+
+.badge p{
+    font-size: 11px;
+    margin: 0;
+}
+
+.badge img {
+    height: 16px;
+    width: 16px;
+    object-fit: contain;
+}
+
+.badge:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
 
 /* ESTILO RODAPÉ */
 
