@@ -384,6 +384,16 @@ section.sobre .flex {
     gap: 60px;
 }
 
+.sobre .linkedin-wrapper {
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.sobre .linkedin-wrapper iframe {
+    transform: scale(1.25);
+    transform-origin: top left;
+}
 .sobre .img-selfie {
     width: 350px;
     border-radius: 40px;
