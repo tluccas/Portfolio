@@ -390,18 +390,19 @@ section.sobre .flex {
     transition: .5s;
 }
 
-.sobre .img-selfie:hover {
-    box-shadow: 0 0 8px #00b4d8;
-    transform: scale(1.05);
-}
-
-.sobre .badge {
+.sobre .img-selfie {
     opacity: 0;
 }
-.sobre .badge.animate {
+
+.sobre .img-selfie.animate {
     animation: fadeInUp;
     animation-duration: 2s;
     opacity: 1;
+}
+
+.sobre .img-selfie:hover {
+    box-shadow: 0 0 8px #00b4d8;
+    transform: scale(1.05);
 }
 
 .sobre .txt-sobre {
