@@ -384,16 +384,6 @@ section.sobre .flex {
     gap: 60px;
 }
 
-.sobre .linkedin-wrapper {
-    height: 350px;
-    display: flex;
-    align-items: center;
-}
-
-.sobre .linkedin-wrapper iframe {
-    transform: scale(1.25);
-    transform-origin: top left;
-}
 .sobre .img-selfie {
     width: 350px;
     border-radius: 40px;
@@ -405,12 +395,21 @@ section.sobre .flex {
     transform: scale(1.05);
 }
 
+.sobre .badge {
+    opacity: 0;
+}
+.sobre .badge.animate {
+    animation: fadeInUp;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
 .sobre .txt-sobre {
     opacity: 0;
 }
 
 .sobre .txt-sobre.animate{
-    animation: fadeInRight;
+    animation: fadeInUp;
     animation-duration: 2s;
     opacity: 1;
 }
