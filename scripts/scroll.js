@@ -1,4 +1,5 @@
 const divSobre = document.querySelector('.sobre .txt-sobre');
+const divBadge = document.querySelector('.sobre .badge');
 const divPortfolio = document.querySelector(".portfolio-grid");
 const pPortfolio = document.querySelector(".portfolio p.port-desc");
 const portDesc = document.querySelector(".port-desc");
@@ -24,5 +25,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+observer.observe(divBadge);
 observer.observe(divSobre);
 observer.observe(divPortfolio);
