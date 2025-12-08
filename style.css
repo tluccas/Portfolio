@@ -346,7 +346,7 @@ section.skills .flex {
   font-size: 26px;
   margin: 15px 0px;
 }
-.skills .skills-box span.span-card{
+.skills .skills-box span.span-card {
   color: #00b4d8;
 }
 .skills .skills-box .txt-animado span {
@@ -737,7 +737,9 @@ footer .container p a {
   .topo-do-site .img-topo-site img {
     width: 100%;
   }
-
+ .waves{
+  display: none;
+ }
   /* HARDSKILLS */
 
   section.skills {
@@ -776,7 +778,7 @@ footer .container p a {
   .portfolio .img-port {
     max-width: 368px;
   }
-
+  
   /* FOOTER */
 
   footer .flex {
