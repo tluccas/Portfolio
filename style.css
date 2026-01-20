@@ -490,6 +490,10 @@ section.sobre .flex {
   text-align: justify;
 }
 
+.sobre span {
+  font-weight: bold;
+}
+
 .btn-social {
   display: flex;
   justify-content: center;
