@@ -21,7 +21,7 @@
 <table>
 	<tr>
 		<td align="center" >
-			<a href="" title="Saiba mais sobre mim">
+			<a href="https://www.linkedin.com/in/lucasalvesz/" title="Saiba mais sobre mim">
 				<img src="https://avatars.githubusercontent.com/u/138324870?v=4" width="100px;" alt="Foto do Alves no GitHub"/><br>
 					<b>Lucas Alves</b><br>
 			</a>
