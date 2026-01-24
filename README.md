@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio — Lucas Alves
 
-## Getting Started
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔹 Descrição
+
+**Portfólio — Lucas Alves** é um projeto pessoal para apresentar meus principais trabalhos, habilidades e experiências como desenvolvedor. Construído com **Next.js**, **React** e **TailwindCSS**, o portfólio utiliza componentes reutilizáveis, animações modernas e foco em performance e responsividade.
+
+> [!TIP]
+> Este é um projeto em constante evolução.
+
+---
+
+## 👨‍💻 Dev
+
+<table>
+	<tr>
+		<td align="center" >
+			<a href="" title="Saiba mais sobre mim">
+				<img src="https://avatars.githubusercontent.com/u/138324870?v=4" width="100px;" alt="Foto do Alves no GitHub"/><br>
+					<b>Lucas Alves</b><br>
+			</a>
+			<sub>Desenvolvedor Full-Stack</sub>
+		</td>
+	</tr>
+</table>
+
+---
+
+## 🔹 Funcionalidades
+
+- **Sessão Sobre Mim**: Apresentação pessoal e trajetória.
+- **Portfólio de Projetos**: Cards interativos com detalhes dos principais projetos.
+- **Skills**: Tecnologias e stacks dominadas.
+- **Contato e Redes Sociais**: Links para contato direto e redes.
+- **Design Responsivo**: Layout adaptável para mobile e desktop.
+- **Animações Modernas**: GSAP e Animate UI para transições suaves.
+
+---
+
+## 🔹 Tecnologias utilizadas
+
+- **React** (UI)
+- **TypeScript** (Tipagem Estática)
+- **NextJS** (Framework React)
+- **TailwindCSS** (Estilização)
+- **GSAP** (Animações)
+- **ESLint** (Linter)
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+portfolio/
+├─ app/                        # App Router do Next.js (páginas, layout, estilos globais)
+│    ├─ layout.tsx             # Layout principal
+│    ├─ page.tsx               # Página inicial
+│    └─ globals.css            # Estilos globais
+├─ components/                 # Componentes reutilizáveis
+│    ├─ Header.tsx             # Cabeçalho
+│    ├─ Footer.tsx             # Rodapé
+│    ├─ MobileMenu.tsx         # Menu mobile
+│    ├─ home/                  # Seções da home (About, Hero, Portfolio, Skills)
+│    ├─ ui/                    # UI (botões, títulos, etc)
+│    └─ animate-ui/            # Animações customizadas
+├─ hooks/                      # Custom Hooks globais
+├─ lib/                        # Utilitários e presets de animação
+├─ public/                     # Arquivos estáticos (imagens, ícones)
+├─ types/                      # Tipos globais (se necessário)
+├─ package.json                # Dependências e scripts
+├─ tailwind.config.ts          # Configurações do TailwindCSS
+├─ tsconfig.json               # Configurações do TypeScript
+├─ next.config.ts              # Configurações do Next.js
+└─ README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Como rodar o projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+# ou
+yarn install && yarn dev
+```
 
-## Learn More
+Acesse [http://localhost:3000](http://localhost:3000) para visualizar.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto é open-source e está sob a licença MIT.
