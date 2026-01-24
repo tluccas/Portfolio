@@ -7,11 +7,16 @@ import Footer from "@/components/Footer";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
   title: "Lucas Alves | Portfolio",
-  description: "Portfolio website of Lucas Alves, a full stack developer.",
+  description:
+    "Portfólio de Lucas Alves, desenvolvedor Full Stack entregando experiências digitais modernas.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
