@@ -6,7 +6,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const email = process.env.NEXT_PUBLIC_EMAIL_URL || "";
   const navItems = [
-    { name: "Início", href: "#hero" },
+    { name: "Início", href: "#" },
     { name: "Especialidades", href: "#skills" },
     { name: "Sobre", href: "#sobre" },
     { name: "Projetos", href: "#portfolio" },

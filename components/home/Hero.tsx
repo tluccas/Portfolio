@@ -27,7 +27,7 @@ export default function Hero() {
   );
 
   return (
-    <section id="hero" className="relative p-12 min-h-screen flex items-center">
+    <section id="" className="relative p-12 min-h-screen flex items-center">
       <HexagonBackground
         hexagonMargin={4}
         className="absolute inset-0 flex items-center justify-center z-1"
