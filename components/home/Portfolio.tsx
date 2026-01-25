@@ -138,7 +138,7 @@ export default function Portfolio() {
       ...staggerFadeUp,
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 70%",
+        start: "top 40%",
         toggleActions: "restart none none restart"
       },
     });
@@ -147,7 +147,7 @@ export default function Portfolio() {
     <section
       ref={sectionRef}
       id="portfolio"
-      className="py-20 px-[4%] bg-dark hover:shadow-[0_0_15px] hover:shadow-primary/30"
+      className="py-20 px-[4%] bg-dark shadow-[0_0_15px] shadow-primary/30"
     >
       <div className="max-w-7xl mx-auto">
         <SectionTitle text="MEUS PROJETOS" highlight="PROJETOS" center />
